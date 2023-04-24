@@ -34,3 +34,8 @@ _Overview:_ TD(λ) is a variation of reinforcement learning method that combines
    * Eligibility trace updated for the new state
    * for each state in value function: add step_size * TD * eligibility trace
    * Update eligibility trace to decrease by one lambda factor (λ) to show decrease over time with less frequency
+
+
+_Conclusion: Why is TD(λ) better than previous methods?_
+ * TD(λ) is able to evaluate the frequency of previous actions => assumes states that were more frequent contributed more to the overall reward of the state
+ * Able to reason the cause for the reward received based on previous actions and alter that action accordingly
