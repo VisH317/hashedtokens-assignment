@@ -37,3 +37,4 @@ _General Idea:_ A Fourier transform converts from the time domain to the frequen
  * The frequency is scaled by the function itself at each timestep - used to get information from the actual function and its variation
  * When summing the values in an integral => most cancels out (including other frequencies) except for the "starting" value of the function (complex number)
    * Magnitude provides amplitude, angle provides phase shift
+
