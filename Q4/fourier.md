@@ -38,3 +38,10 @@ _General Idea:_ A Fourier transform converts from the time domain to the frequen
  * When summing the values in an integral => most cancels out (including other frequencies) except for the "starting" value of the function (complex number)
    * Magnitude provides amplitude, angle provides phase shift
 
+**Intuitive Understanding of the Fourier Transform equation:**
+ * Input => the frequency, output => a rotation (provided by a vector, with the magnitude being the amplitude of the sine curve and the argument being the phase shift)
+ * equation: infinite integral over time(function * e ^ (i * 2pi * frequency * time))
+ * Representation:
+   * the e part = sets the rotational frequency and scales the function based on that
+   * When summing over => getting the average value of the sine function after looping across the whole function
+ * In the integral => summing will cancel out all non-periodic parts

@@ -29,4 +29,9 @@ _general idea:_ The convolution and involution act on different spaces. The conv
 
  * Overall methodology: generate a kernel based on a specific pixel and its representations across feature maps, and use that to extract features based on the surrounding context along with channel comparisons
 
+**Convolutional and Involutional Neural Networks:**
+ * Both include conventional layers: pooling, batch normalization, ReLU activation
+ * Involutional - uses involutions across feature maps
+ * Convolution - uses convolutions within the same feature map
+
 **Overall Difference:** The main difference between convolutions and involutions is how the kernel is created, the convolution kernel is generated over time based on backpropagation and only works on the specific feature map. Involutions use information across feature maps to create a kernel to extract features in the input
