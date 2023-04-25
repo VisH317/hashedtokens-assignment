@@ -21,6 +21,8 @@ _General Idea:_ A Fourier transform converts from the time domain to the frequen
  * Representation:
    * the e part = sets the rotational frequency and scales the function based on that
    * When summing over => getting the average value of the sine function after looping across the whole function
+   * Can be thought of as converting to a polar equation (a circular figure scaled by the function)
+ * When summing the parts in this rotational plane, most will cancel out (opposite quadrant values)
  * In the integral => summing will cancel out other frequencies and will only leave the starting vector after everything cancels
  * starting vector - represents rotation in a circle with phase shift and amplitude
 
@@ -32,7 +34,7 @@ _General Idea:_ A Fourier transform converts from the time domain to the frequen
    * The fourier transform of the function takes the frequency as input and provides the amplitude and phase for that specific frequency component in the function
    * Works for non-periodic functions as well
 
-**Mathematical Generalization:**
+**Mathematical Concepts:**
  * important concept: e ^ iθ represents rotational motion
    * Same as cosθ + isinθ to the power of a value, because it increments by the value over time
    * e shows continuous growth in the rotational motion, through quadrants of the complex plane
