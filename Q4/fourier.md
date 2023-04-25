@@ -15,6 +15,15 @@ _General Idea:_ A Fourier transform converts from the time domain to the frequen
    * Example: data compression, only need to store important frequencies to keep a representation of something
  * Overall use: instead of analyzing change over time in a function, we can analyze components of a function and how they add up to make the whole, in other words identify causes of a specific function output!
 
+**Intuitive Understanding of the Fourier Transform equation:**
+ * Input => the frequency, output => a rotation (provided by a vector, with the magnitude being the amplitude of the sine curve and the argument being the phase shift)
+ * equation: infinite integral over time(function * e ^ (i * 2pi * frequency * time))
+ * Representation:
+   * the e part = sets the rotational frequency and scales the function based on that
+   * When summing over => getting the average value of the sine function after looping across the whole function
+ * In the integral => summing will cancel out other frequencies and will only leave the starting vector after everything cancels
+ * starting vector - represents rotation in a circle with phase shift and amplitude
+
 **Concepts:**
  * starts with a Fourier series - a way of representing periodic (repeating) functions through a bunch of sine and cosine functions
    * shows that any periodic function can be created by adding sine and cosine functions with specific coefficients
@@ -37,11 +46,3 @@ _General Idea:_ A Fourier transform converts from the time domain to the frequen
  * The frequency is scaled by the function itself at each timestep - used to get information from the actual function and its variation
  * When summing the values in an integral => most cancels out (including other frequencies) except for the "starting" value of the function (complex number)
    * Magnitude provides amplitude, angle provides phase shift
-
-**Intuitive Understanding of the Fourier Transform equation:**
- * Input => the frequency, output => a rotation (provided by a vector, with the magnitude being the amplitude of the sine curve and the argument being the phase shift)
- * equation: infinite integral over time(function * e ^ (i * 2pi * frequency * time))
- * Representation:
-   * the e part = sets the rotational frequency and scales the function based on that
-   * When summing over => getting the average value of the sine function after looping across the whole function
- * In the integral => summing will cancel out all non-periodic parts
